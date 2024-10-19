@@ -1,0 +1,38 @@
+/** @format */
+
+.tool {
+	display: flex; /* Usa flexbox para alinhar os itens */
+	align-items: center; /* Alinha verticalmente no centro */
+	background-color: #f0f0f0; /* Cor de fundo */
+	border-radius: 8px; /* Cantos arredondados */
+	padding: 10px; /* Espaçamento interno */
+    margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.icon {
+	width: 80px; /* Ajuste o tamanho do ícone conforme necessário */
+	height: 80px; /* Mantenha a proporção */
+	object-fit: contain; /* Mantém a proporção da imagem */
+	margin-right: 10px; /* Espaço entre o ícone e o nome */
+}
+
+.name {
+	font-size: 18px; 
+	font-weight: bold;
+	color: #000; 
+}
+
+@media only screen and (max-width: 480px){
+	.tool {
+		padding: 10px; 
+		margin: 10px;
+	}
+	
+	.icon {	
+		width: 60px; 
+		height: 60px; 
+		margin-right: 5px; 
+	}
+
+}

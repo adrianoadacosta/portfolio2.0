@@ -1,0 +1,65 @@
+/** @format */
+.contactContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.contactImage {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.contactImage img {
+	max-width: 90%;
+	width: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+}
+figure p {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+}
+.contactInfo {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.contactInfo div {
+	margin-bottom: 20px;
+}
+.contactInfo p {
+	margin: 0;
+	font-size: 18px;
+}
+.contactInfo button {
+	background-color: #6c7a89;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.contactInfo button:hover {
+	background-color: #5a6a7a;
+}
+.icon {
+	width: 24px; /* Ajuste o tamanho do ícone */
+	height: 24px;
+	margin-left: 10px;
+}
+@media only screen and (max-width: 480px) {
+	.contactContainer {
+		flex-direction: column;
+		padding: 10px;
+		padding-bottom: 0px;
+	}
+	figure {
+		margin: 0; /* Remove as margens padrão */
+		margin-bottom: 20px;
+	}
+}

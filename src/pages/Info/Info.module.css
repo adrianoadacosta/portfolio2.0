@@ -1,0 +1,131 @@
+/** @format */
+/* Container principal */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Título do projeto */
+h1 {
+	text-align: center;
+}
+/* Descrição do projeto */
+.infoP {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+	line-height: 1.6;
+	text-align: center;
+}
+/* Galeria de imagens */
+.imageGallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 15px;
+	margin-bottom: 50px;
+	margin: 80px;
+}
+.projectImage {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+}
+.projectImage:hover {
+	transform: scale(1.8);
+}
+
+/* Links externos */
+.linksContainer {
+	display: flex;
+	justify-content: center; /* Centraliza os links */
+	gap: 30px; /* Espaçamento entre os links */
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.links {
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2rem;
+	cursor: pointer;
+	margin: 15px 0;
+	margin-bottom: 0;
+}
+.links:hover {
+	color: #0f0ade;
+}
+
+/* Estilização do vídeo */
+video {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ferramentas usadas */
+.toolsContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+/* Tags */
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 15px;
+	justify-content: center;
+}
+.tags p {
+	background-color: #0f0ade;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 0.9rem;
+}
+
+/* Responsividade */
+
+/* ver depois */
+@media only screen and (max-width: 768px) {
+	.container {
+		padding: 15px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.1rem;
+	}
+	.imageGallery {
+		grid-template-columns: 1fr;
+	}
+	.projectImage:hover {
+		transform: scale(1.1);
+	}
+	.imageGallery {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.projectImage:hover {
+		transform: scale(1.1);
+	}
+	.linksContainer {
+		gap: 20px;
+	}
+	.imageGallery {
+		margin: 0;
+	}
+}
