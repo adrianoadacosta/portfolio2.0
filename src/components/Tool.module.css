@@ -6,7 +6,7 @@
 	background-color: #f0f0f0; /* Cor de fundo */
 	border-radius: 8px; /* Cantos arredondados */
 	padding: 10px; /* Espaçamento interno */
-    margin-left: 15px;
+	margin-left: 15px;
 	margin-bottom: 10px;
 }
 
@@ -18,21 +18,22 @@
 }
 
 .name {
-	font-size: 18px; 
+	font-size: 18px;
 	font-weight: bold;
-	color: #000; 
+	color: #000;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
 	.tool {
-		padding: 10px; 
+		padding: 10px;
 		margin: 10px;
 	}
-	
-	.icon {	
-		width: 60px; 
-		height: 60px; 
-		margin-right: 5px; 
+	.icon {
+		width: 60px;
+		height: 60px;
+		margin-right: 5px;
 	}
-
+	.name {
+		font-size: 15px;
+	}
 }

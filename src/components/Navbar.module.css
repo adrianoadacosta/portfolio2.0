@@ -12,8 +12,9 @@
 .links_list {
 	display: flex;
 	list-style: none;
+	margin: 0;
 }
-.links_list {
+.links_list li {
 	margin-right: 1em;
 }
 .links_list li a {
@@ -23,11 +24,62 @@
 	background-color: #0f0ade;
 	padding: 5px;
 	color: #fff;
+	border-radius: 4px;
+}
+form {
+	display: flex; /* alinhar input e botão */
+	align-items: stretch;
+}
+input[type='text'] {
+	padding: 0.5em;
+	border: 1px solid #ddd; /* Borda padrão */
+	border-radius: 4px;
+	margin-right: 0.5em; /* Distância entre o input e o botão */
+	max-width: 200px; /* Largura máxima para o input */
+	flex: 1; /* Permite que o input cresça em largura */
+	box-sizing: border-box;
+}
+.button_search {
+	padding: 0.5em 1em; /* Espaçamento interno do botão */
+	border: 1px solid; /* Remove borda padrão */
+	background-color: #0f0ade; /* Cor do botão */
+	color: #fff; /* Cor do texto */
+	border-radius: 4px; /* Bordas arredondadas */
+	cursor: pointer; /* Cursor em forma de mão */
+	box-sizing: border-box;
 }
 
 /* responsivo */
 @media only screen and (max-width: 480px) {
 	.navbar {
 		margin-left: 0;
+		
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		flex-direction: column; /* Muda a direção dos itens da navbar */
+		
+	}
+
+	.navbar .links_list {
+		margin-bottom: 1em; /* Espaço abaixo da lista de links */
+	}
+
+	form {
+		width: 100%; /* Formulário ocupa toda a largura */
+		display: flex;
+		justify-content: space-between; /* Alinha input e botão */
+		margin-top: 0.5em; /* Espaço acima do formulário */
+	}
+
+	input[type='text'] {
+		flex: 1; /* Permite que o input cresça */
+		margin-right: 0.5em; /* Distância entre input e botão */
+	}
+
+	.button_search {
+		flex-shrink: 0; /* Impede que o botão encolha */
 	}
 }

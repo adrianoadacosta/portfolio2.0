@@ -19,7 +19,7 @@ const fullStack = [
         ],
         video:'/img/Fullstack/CineSync/2024-02-11 14-59-14.mp4',
         git: 'https://github.com/adrianoadacosta/CineSync',
-        tags:['React', 'API', 'TMDB', 'Hooks', 'Vite'],
+        tags:['React', 'API', 'TMDB', 'Hooks', 'Vite', 'Fullstack'],
     },
     {
         id: 2,
@@ -39,7 +39,7 @@ const fullStack = [
         ],
         video:'/img/Fullstack/Job-finder/job finder.mp4',
         git:'https://github.com/adrianoadacosta/Job_finder',
-        tags:['React', 'API', 'TMDB', 'Hooks', 'Vite'],
+        tags:['React', 'API', 'TMDB', 'Hooks', 'Vite', 'Fullstack'],
     },
     {
         id: 14,
@@ -60,7 +60,7 @@ const fullStack = [
         ],
         git:'https://github.com/adrianoadacosta/miniBlog',
         deploy:'https://adrianoadacostaminiblog.vercel.app/',
-        tags:['React', 'Firebase', 'Autenticação', 'Dashboard', 'Vite', 'CRUD'],
+        tags:['React', 'Firebase', 'Autenticação', 'Dashboard', 'Vite', 'CRUD', 'Fullstack'],
     },
 ];
 
@@ -77,7 +77,7 @@ const backEnd = [
         ],
         tools: [findTool('Java')],
         git:'https://github.com/adrianoadacosta/Jogo_xadrez_Java',
-        tags:['Java', 'Terminal', 'Jogo', 'Polimorfismo'],
+        tags:['Java', 'Terminal', 'Jogo', 'Polimorfismo', 'backEnd'],
     },
     {
         id: 4,
@@ -94,7 +94,7 @@ const backEnd = [
             findTool('SpringBoot'),
         ],
         git:'https://github.com/adrianoadacosta/workshop-springboot3-jpa',
-        tags:['Java', 'Spring Boot', 'JPA', 'Hibernate', 'CRUD'],
+        tags:['Java', 'Spring Boot', 'JPA', 'Hibernate', 'CRUD', 'backEnd'],
     },
     {
         id: 5,
@@ -112,7 +112,7 @@ const backEnd = [
             findTool('MongoDB'),
         ],
         git:'https://github.com/adrianoadacosta/Projeto-MongoDB-com-Spring-Boot',
-        tags:['Java', 'Spring Boot', 'MongoDB', 'CRUD', 'NoSQL'],
+        tags:['Java', 'Spring Boot', 'MongoDB', 'CRUD', 'NoSQL', 'backEnd'],
     },
     {
         id: 6,
@@ -130,7 +130,7 @@ const backEnd = [
             findTool('Swagger'),
         ],
         git:'https://github.com/adrianoadacosta/Sess-o_de_Vota-o',
-        tags:['Java', 'Spring Boot', 'Swagger', 'API', 'Votação' ],
+        tags:['Java', 'Spring Boot', 'Swagger', 'API', 'Votação', 'backEnd'],
     },
     {
         id: 7,
@@ -153,7 +153,7 @@ const backEnd = [
             findTool('Postman'),
         ],
         git:'https://github.com/adrianoadacosta/TrilhaBackEndJR-JUN15/tree/master',
-        tags:['JavaScript', 'Express', 'CRUD', 'Sequelize', 'API', 'Autenticação', 'Swagger', 'Nodejs', 'Postman'],
+        tags:['JavaScript', 'Express', 'CRUD', 'Sequelize', 'API', 'Autenticação', 'Swagger', 'Nodejs', 'Postman', 'backEnd'],
     },    
     {
         id: 15,
@@ -171,7 +171,7 @@ const backEnd = [
             findTool('Postman'),
         ],
         git:'https://github.com/adrianoadacosta/controle-acesso-spring-security',
-        tags:['Java', 'SpringBoot', 'Spring Security', 'H2', 'Autenticação', 'Autorização', 'Segurança', 'Postman'],
+        tags:['Java', 'SpringBoot', 'Spring Security', 'H2', 'Autenticação', 'Autorização', 'Segurança', 'Postman', 'backEnd'],
     },    
 ];
 
@@ -193,7 +193,7 @@ const frontEnd = [
         ],
         git:'https://github.com/adrianoadacosta/jogo-da-memoria-CDZ',
         deploy:'https://adrianoadacosta.github.io/jogo-da-memoria-CDZ/',
-        tags:['HTML', 'CSS', 'JavaScript', 'Jogo', 'Anime'],
+        tags:['HTML', 'CSS', 'JavaScript', 'Jogo', 'Anime', 'frontEnd'],
     },
     {
         id: 9,
@@ -212,7 +212,7 @@ const frontEnd = [
         ],
         git:'https://github.com/adrianoadacosta/Quizz',
         deploy:'https://adrianoadacosta.github.io/Quizz/',
-        tags:['HTML', 'CSS', 'JavaScript', 'Jogo', 'Quiz'],
+        tags:['HTML', 'CSS', 'JavaScript', 'Jogo', 'Quiz', 'frontEnd'],
     },
     {
         id: 10,
@@ -230,7 +230,7 @@ const frontEnd = [
             findTool('CSS'),
         ],
         git:'https://github.com/adrianoadacosta/Cronometro.js',
-        tags:['HTML', 'CSS', 'JavaScript'],
+        tags:['HTML', 'CSS', 'JavaScript' , 'frontEnd'],
     },
     {
         id: 11,
@@ -250,7 +250,7 @@ const frontEnd = [
             findTool('Jquery'),
         ],
         git:'https://github.com/adrianoadacosta/Orlando-City-website',
-        tags:['HTML', 'CSS', 'Bootstrap', 'jQuery', 'Responsivo', 'Design'],
+        tags:['HTML', 'CSS', 'Bootstrap', 'jQuery', 'Responsivo', 'Design', 'frontEnd'],
     },
     {
         id: 12,
@@ -268,7 +268,7 @@ const frontEnd = [
             findTool('CSS'),
         ],
         git:'https://github.com/adrianoadacosta/JogoDaVelhaJS',
-        tags:['HTML', 'CSS', 'JavaScript', 'Jogo'],
+        tags:['HTML', 'CSS', 'JavaScript', 'Jogo', 'frontEnd'],
     },
     {
         id: 13,
@@ -287,7 +287,7 @@ const frontEnd = [
             findTool('CSS'),
         ],
         git:'https://github.com/adrianoadacosta/To-Do-List_JS',
-        tags:['HTML', 'CSS', 'JavaScript', 'Tarefas', 'Responsivo'],
+        tags:['HTML', 'CSS', 'JavaScript', 'Tarefas', 'Responsivo', 'frontEnd'],
     },
 ];
 

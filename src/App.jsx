@@ -16,6 +16,7 @@ import BackEnd from './pages/Projects/backEnd'
 import FullStack from './pages/Projects/FullStack'
 import NotFound from './pages/NotFound/NotFound'
 import Info from './pages/Info/Info'
+import Search from './pages/Search/Search'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
               <Route path='/projects/full' element={<FullStack/>} />
               <Route path="/projects/:id/info" element={<Info />} />
               <Route path='/contact' element={<Contact/>} />
+              <Route path="/search" element={<Search />} />
               <Route path='*' element={< NotFound />} />
           </Routes>
         </div>        

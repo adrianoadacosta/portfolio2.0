@@ -8,6 +8,12 @@
 .titles {
 	color: #000;
 }
+.titles_p {
+	font-size: 20px;
+	text-align: center;
+	margin: 25px auto; /* Centraliza dentro do contêiner */
+	width: 100%; /* Garante que o texto ocupe a largura total do contêiner */
+}
 .cardContainer {
 	display: flex;
 	flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
