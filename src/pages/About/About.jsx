@@ -1,4 +1,5 @@
 import styles from './About.module.css'
+import rostoIMG from '../../assets/img/rosto.jpg'
 
 import ToolsList from "../../components/ToolsList"
 import tools from '../../data/tools'
@@ -10,7 +11,7 @@ const About = () => {
   return (
     <div>
         <div className={styles.container}>
-          <img src="../../../public/img/rosto.jpg" alt="Foto Adriano Costa" className={styles.foto}/>
+          <img src={rostoIMG} alt="Foto Adriano Costa" className={styles.foto}/>
             <div className={styles.textContainer}>
               <h1>Adriano Costa</h1>
               <h2>Desenvolvedor de Software</h2>
