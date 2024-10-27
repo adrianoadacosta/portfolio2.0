@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
         <div className={styles.container}>
-          <img src="img/rosto.jpg" alt="Foto Adriano Costa" className={styles.foto}/>
+          <img src="../../../public/img/rosto.jpg" alt="Foto Adriano Costa" className={styles.foto}/>
             <div className={styles.textContainer}>
               <h1>Adriano Costa</h1>
               <h2>Desenvolvedor de Software</h2>
