@@ -1,4 +1,15 @@
 import tools from './tools';
+// imports fullstack
+// cinesync
+import cineCover from '../assets/img/Fullstack/CineSync/cinesyncCover.png'
+import cineVideo from '../assets/img/Fullstack/CineSync/cinevideo.mp4'
+// job finder
+import jobCover from '../assets/img/Fullstack/Job-finder/jobFinderCover.png'
+import jobVideo from '../assets/img/Fullstack/Job-finder/jobFinder.mp4'
+// miniblog
+import blogCover from '../assets/img/Fullstack/miniblog/miniblog_inicial.png'
+import blog1 from '../assets/img/Fullstack/miniblog/miniblog_create_post.png'
+import blog2 from '../assets/img/Fullstack/miniblog/miniblog_dashboard_delete.png'
 
 // Função para buscar ferramenta por nome
 const findTool = (toolName) => {
@@ -10,14 +21,14 @@ const fullStack = [
         id: 1,
         title: "CineSync",
         description: "Aplicação React com integração da API do TMDB, navegação dinâmica e busca avançada.",
-        cover:'/img/Fullstack/CineSync/cinesyncCover.png',
+        cover: cineCover,
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
             findTool('CSS'),
             findTool('React'),
         ],
-        video:'/img/Fullstack/CineSync/2024-02-11 14-59-14.mp4',
+        video: cineVideo,
         git: 'https://github.com/adrianoadacosta/CineSync',
         tags:['React', 'API', 'TMDB', 'Hooks', 'Vite', 'Fullstack'],
     },
@@ -25,7 +36,7 @@ const fullStack = [
         id: 2,
         title: "Job Finder",
         description: "Aplicação de busca de empregos para desenvolvedores, com rotas dinâmicas e interação com banco de dados.",
-        cover:'/img/Fullstack/Job-finder/jobFinderCover.png',
+        cover: jobCover,
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -37,7 +48,7 @@ const fullStack = [
             findTool('Express'),
             findTool('SQLite'), 
         ],
-        video:'/img/Fullstack/Job-finder/job finder.mp4',
+        video: jobVideo,
         git:'https://github.com/adrianoadacosta/Job_finder',
         tags:['React', 'API', 'TMDB', 'Hooks', 'Vite', 'Fullstack'],
     },
@@ -45,12 +56,8 @@ const fullStack = [
         id: 14,
         title: "Miniblog",
         description: "Aplicação de blog com autenticação de usuário e integração com Firebase. A dashboard permite ver, deletar e editar posts, e partes do menu são visíveis apenas para usuários cadastrados.",
-        cover:'/img/Fullstack/miniblog/miniblog inicial.png',
-        images:[
-            '/img/Fullstack/miniblog/miniblog inicial.png',
-            '/img/Fullstack/miniblog/miniblog create post.png',
-            '/img/Fullstack/miniblog/miniblog dashboard delete.png',
-        ],
+        cover: blogCover,
+        images:[ blogCover, blog1, blog2 ],
         tools: [
             findTool('React'),
             findTool('Firebase'),
