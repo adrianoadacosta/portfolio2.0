@@ -41,6 +41,34 @@ import trilhaUsuarioOk from '../assets/img/Back/trilhaBack/usuariook.png'
 import cadastro1 from '../assets/img/Back/cadastro/cadastro1.png'
 import cadastro2 from '../assets/img/Back/cadastro/cadastro12.png'
 import cadastro3 from '../assets/img/Back/cadastro/cadastro123.png'
+
+// imports front end
+// memoria cdz
+import cdzInicial from '../assets/img/Front/jogoMemoriaCDZ/pginicial.png'
+import cdzJogo from '../assets/img/Front/jogoMemoriaCDZ/pgjogo.png'
+import cdzJogando from '../assets/img/Front/jogoMemoriaCDZ/jogando.png'
+// quizz
+import quizzInicial from '../assets/img/Front/Quizz/inicial.png'
+import quizzFinal from '../assets/img/Front/Quizz/final.png'
+import quizzPergunta from '../assets/img/Front/Quizz/pergunta.png'
+// cronometro
+import cron1 from '../assets/img/Front/cronometro/Cron1.png'
+import cron2 from '../assets/img/Front/cronometro/Cron2.png'
+import cron3 from '../assets/img/Front/cronometro/Cron3.png'
+// orlando city
+import orlandoMenuMobile from '../assets/img/Front/orlando/menuMobileOrlando.png'
+import orlandoMobile from '../assets/img/Front/orlando/mobileOrlando.png'
+import orlandoPC from '../assets/img/Front/orlando/Orlando-City-pc.png'
+// jogo da velha
+import velha from '../assets/img/Front/JogodavelhaJS/jogo_da_velha.png'
+import velhaMSG from '../assets/img/Front/JogodavelhaJS/msg_vitoria_jogo_da_velha.png'
+// to do list
+import todoInicial from '../assets/img/Front/todolist/to_do_list_inicial.png'
+import todoItens from '../assets/img/Front/todolist/to_do_list_itens.png'
+import todoMobile from '../assets/img/Front/todolist/to_do_list_mobile.png'
+import todoCheck from '../assets/img/Front/todolist/todo_list_check.png'
+
+
 // Função para buscar ferramenta por nome
 const findTool = (toolName) => {
     return tools.find(tool => tool.name === toolName);
@@ -192,12 +220,8 @@ const frontEnd = [
         id: 8,
         title: "Jogo da Memória CDZ",
         description: 'Jogo da memória com cartas personalizadas dos Cavaleiros do Zodíaco.',
-        cover:'/img/Front/jogoMemoriaCDZ/pgjogo.png',
-        images:[
-            '/img/Front/jogoMemoriaCDZ/pginicial.png',
-            '/img/Front/jogoMemoriaCDZ/pgjogo.png',
-            '/img/Front/jogoMemoriaCDZ/jogando.png',
-        ],
+        cover: cdzJogo,
+        images:[ cdzInicial, cdzJogo, cdzJogando ],
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -211,12 +235,8 @@ const frontEnd = [
         id: 9,
         title: "Quizz",
         description: 'Quiz com perguntas aleatórias sobre temas escolhidos e cálculo de pontuação.',
-        cover:'/img/Front/Quizz/inicial.png',
-        images:[
-            '/img/Front/Quizz/inicial.png',
-            '/img/Front/Quizz/pergunta.png',
-            '/img/Front/Quizz/final.png',
-        ],
+        cover: quizzInicial,
+        images:[ quizzInicial, quizzPergunta, quizzFinal ],
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -230,12 +250,8 @@ const frontEnd = [
         id: 10,
         title: "Cronômetro em js",
         description: 'Cronômetro interativo baseado em um tutorial do professor Matheus Battisti.',
-        cover:'/img/Front/cronometro/Cron1.png',
-        images:[
-            '/img/Front/cronometro/Cron1.png',
-            '/img/Front/cronometro/Cron2.png',
-            '/img/Front/cronometro/Cron3.png',
-        ],
+        cover: cron1,
+        images:[ cron1, cron2, cron3 ],
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -248,12 +264,8 @@ const frontEnd = [
         id: 11,
         title: "Orlando City Website",
         description: 'Site responsivo para o time de futebol Orlando City, com layout moderno.',
-        cover:'/img/Front/orlando/Orlando-City-pc.png',
-        images:[
-            '/img/Front/orlando/Orlando-City-pc.png',
-            '/img/Front/orlando/mobileOrlando.png',
-            '/img/Front/orlando/menuMobileOrlando.png',
-        ],
+        cover: orlandoPC,
+        images:[ orlandoPC, orlandoMobile, orlandoMenuMobile ],
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -268,12 +280,8 @@ const frontEnd = [
         id: 12,
         title: "Jogo da Velha",
         description: 'Jogo da Velha com interface interativa, jogabilidade multiplayer e contra IA.',
-        cover:'/img/Front/Jogo da velha JS/jogo da velha.png',
-        images:[
-            '/img/Front/Jogo da velha JS/tela inicial jogo da velha.png',
-            '/img/Front/Jogo da velha JS/jogo da velha.png',
-            '/img/Front/Jogo da velha JS/msg vitoria jogo da velha.png',
-        ],
+        cover: velha,
+        images:[ velha, velhaMSG ],
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -286,13 +294,8 @@ const frontEnd = [
         id: 13,
         title: "To Do List",
         description: 'Lista de tarefas simples e interativa.',
-        cover:'/img/Front/todolist/to do list check.png',
-        images:[
-            '/img/Front/todolist/todo list inicial.png',
-            '/img/Front/todolist/to do list itens.png',
-            '/img/Front/todolist/to do list check.png',
-            '/img/Front/todolist/to do list mobile.png',
-        ],
+        cover: todoCheck,
+        images:[ todoInicial, todoItens, todoCheck, todoMobile ],
         tools: [
             findTool('JavaScript'),
             findTool('HTML'),
@@ -304,5 +307,3 @@ const frontEnd = [
 ];
 
 export default {fullStack, backEnd, frontEnd};
-
-// ../../public/img/
