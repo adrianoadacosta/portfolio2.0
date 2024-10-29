@@ -11,6 +11,36 @@ import blogCover from '../assets/img/Fullstack/miniblog/miniblog_inicial.png'
 import blog1 from '../assets/img/Fullstack/miniblog/miniblog_create_post.png'
 import blog2 from '../assets/img/Fullstack/miniblog/miniblog_dashboard_delete.png'
 
+// imports back end
+// xadrez
+import xadrezTab from '../assets/img/Back/xadrez/tabulheiro.png'
+import xadrezMov from '../assets/img/Back/xadrez/movimento_peças.png'
+import xadrezDes from '../assets/img/Back/xadrez/chess-system-design.png'
+// sbjpa
+import jpaLogica from '../assets/img/Back/SBJPA/Logical_layers.png'
+import jpaInst from '../assets/img/Back/SBJPA/Domain_instance.png'
+import jpaModel from '../assets/img/Back/SBJPA/Domain_model.png'
+// mongo
+import mongoCover from '../assets/img/Back/mongo/mongodbcover-1.png'
+import mongo1 from '../assets/img/Back/mongo/mongodb1-1.png'
+import mongo2 from '../assets/img/Back/mongo/mongodb2-1.png'
+import mongo3 from '../assets/img/Back/mongo/mongodb3-1.png'
+// votação
+import votoCover from '../assets/img/Back/SessãoVotação/votoCover.png'
+import voto1 from '../assets/img/Back/SessãoVotação/voto1.png'
+import voto2 from '../assets/img/Back/SessãoVotação/voto2.png'
+import voto3 from '../assets/img/Back/SessãoVotação/voto3.png'
+// trilha back
+import trilhaCover from '../assets/img/Back/trilhaBack/cover.png'
+import trilhaAutenticacao from '../assets/img/Back/trilhaBack/autenticacao.png'
+import trilhaAutorizado from '../assets/img/Back/trilhaBack/autorizado.png'
+import trilhaInicial from '../assets/img/Back/trilhaBack/inicial.png'
+import trilhaToken from '../assets/img/Back/trilhaBack/token.png'
+import trilhaUsuarioOk from '../assets/img/Back/trilhaBack/usuariook.png'
+// controle acesso
+import cadastro1 from '../assets/img/Back/cadastro/cadastro1.png'
+import cadastro2 from '../assets/img/Back/cadastro/cadastro12.png'
+import cadastro3 from '../assets/img/Back/cadastro/cadastro123.png'
 // Função para buscar ferramenta por nome
 const findTool = (toolName) => {
     return tools.find(tool => tool.name === toolName);
@@ -76,12 +106,8 @@ const backEnd = [
         id: 3,
         title: "Xadrez em Java",
         description: "Implementação do jogo de xadrez jogado no terminal com tratamento de exceções e lógica avançada.",
-        cover:'/img/Back/xadrez/tabulheiro.png',
-        images:[
-            '/img/Back/xadrez/tabulheiro.png',
-            '/img/Back/xadrez/movimento das peças.png',
-            '/img/Back/xadrez/chess-system-design.png',
-        ],
+        cover: xadrezTab,
+        images:[ xadrezTab, xadrezMov, xadrezDes ],
         tools: [findTool('Java')],
         git:'https://github.com/adrianoadacosta/Jogo_xadrez_Java',
         tags:['Java', 'Terminal', 'Jogo', 'Polimorfismo', 'backEnd'],
@@ -90,12 +116,8 @@ const backEnd = [
         id: 4,
         title: "Workshop Spring Boot 3 JPA",
         description: "Aplicação Spring Boot com operações CRUD e banco de dados H2.",
-        cover:'/img/Back/SBJPA/Logical layers.png',
-        images:[
-            '/public/img/Back/SBJPA/Domain model.png',
-            '/img/Back/SBJPA/Domain instance.png',
-            '/img/Back/SBJPA/Logical layers.png',
-        ],
+        cover: jpaLogica,
+        images:[ jpaLogica, jpaInst, jpaModel],
         tools: [
             findTool('Java'),
             findTool('SpringBoot'),
@@ -107,12 +129,8 @@ const backEnd = [
         id: 5,
         title: "Projeto MongoDB com Spring",
         description: "CRUD usando MongoDB e Spring Boot, explorando a diferença entre bancos de dados NoSQL e relacionais.",
-        cover:'/img/Back/mongo/mongodbcover-1.png',
-        images:[
-            '/img/Back/mongo/mongodb1-1.png',
-            '/img/Back/mongo/mongodb2-1.png',
-            '/img/Back/mongo/mongodb3-1.png',
-        ],
+        cover: mongoCover,
+        images:[ mongo1, mongo2, mongo3],
         tools: [
             findTool('Java'),
             findTool('SpringBoot'),
@@ -125,12 +143,8 @@ const backEnd = [
         id: 6,
         title: "Sessão Votação",
         description: "Projeto de um sistema em backend com a criação de sessões de votação aonde o associado so pode votar uma vez e os votos sao sim ou não, mostrando o resultado final. Projeto em Java, Spring Boot e Swagger",
-        cover:'/img/Back/Sessão votação/votoCover.png',
-        images:[
-            '/img/Back/Sessão votação/voto1.png',
-            '/img/Back/Sessão votação/voto2.png',
-            '/img/Back/Sessão votação/voto3.png',
-        ],
+        cover: votoCover,
+        images:[ voto1, voto2, voto3 ],
         tools: [
             findTool('Java'),
             findTool('SpringBoot'),
@@ -143,14 +157,9 @@ const backEnd = [
         id: 7,
         title: "Trilha Backend Jr",
         description: "API RESTful para gerenciamento de tarefas com autenticação de usuários.",
-        cover:'/img/Back/trilhaBack/cover.png',
-        images:[
-            '/img/Back/trilhaBack/inicial.png',           
-            '/img/Back/trilhaBack/usuariook.png',
-            '/img/Back/trilhaBack/token.png',
-            '/img/Back/trilhaBack/autenticacao.png',
-            '/img/Back/trilhaBack/autorizado.png',
-        ],
+        cover: trilhaCover,
+        images:[ trilhaInicial, trilhaUsuarioOk, trilhaToken, trilhaAutenticacao, 
+            trilhaAutorizado ],
         tools: [
             findTool('JavaScript'),
             findTool('Express'),
@@ -166,12 +175,8 @@ const backEnd = [
         id: 15,
         title: "Controle de Acesso com Spring Security",
         description: "Implementação de um sistema de controle de acesso robusto com Spring Security e banco de dados H2. Inclui autenticação via Security Filter Chain, rotas protegidas, roles e permissões, criptografia de senhas e testes com Postman.",
-        cover:'/img/Back/cadastro/cadastro 1.png',
-        images:[
-            '/img/Back/cadastro/cadastro 1.png',
-            '/img/Back/cadastro/cadastro 12.png',
-            '/img/Back/cadastro/cadastro 123.png',
-        ],
+        cover: cadastro1,
+        images:[ cadastro1, cadastro2, cadastro3],
         tools: [
             findTool('Java'),
             findTool('SpringBoot'),
