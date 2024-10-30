@@ -23,3 +23,60 @@ a:hover,
 nav button:hover {
 	color: #000;
 }
+
+/*  Botão de voltar */
+.back-button {
+	background-color: #0f0ade;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 16px;
+	position: absolute;
+	top: 135px;
+	left: 60px;
+	border: none;
+	cursor: pointer;
+}
+.back-icon {
+	margin-right: 18px; /* Espaço entre o ícone e o texto */
+}
+
+/* botao de voltar top da pg */
+.scroll-to-top {
+	position: fixed;
+	bottom: 50px; /* Distância do fundo */
+	right: 35px; /* Distância da direita */
+	background-color: #0f0ade;
+	color: #fff;
+	border: none;
+	border-radius: 50%; /* Botão redondo */
+	width: 80px; /* Largura do botão */
+	height: 80px; /* Altura do botão */
+	cursor: pointer;
+	transition: opacity 0.3s;
+	opacity: 0.7;
+}
+.scroll-to-top.visible {
+	opacity: 1; /* Totalmente opaco quando visível */
+}
+.scroll-to-top:hover {
+	opacity: 1; /* Totalmente opaco quando passa o mouse */
+}
+.top-icon {
+	font-size: 50px;
+}
+
+/* responsivo */
+@media only screen and (max-width: 768px) {
+	.back-button {
+		display: flex;
+		position: relative;
+		left: 0;
+		top: 5px;
+		margin: 10px; /* Ajuste o margin conforme necessário */
+	}
+	.scroll-to-top {
+		bottom: 35px; /* Distância do fundo */
+		right: 20px; /* Distância da direita */
+	}
+}

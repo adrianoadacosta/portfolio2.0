@@ -17,6 +17,7 @@ import FullStack from './pages/Projects/FullStack'
 import NotFound from './pages/NotFound/NotFound'
 import Info from './pages/Info/Info'
 import Search from './pages/Search/Search'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
           </Routes>
         </div>        
         <Footer/>
-     
+        <ScrollToTop />     
     </>
   )
 }

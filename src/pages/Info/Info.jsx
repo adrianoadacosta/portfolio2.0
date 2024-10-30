@@ -1,11 +1,17 @@
 import styles from './Info.module.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
 import ToolsList from '../../components/ToolsList';
 import projects from '../../data/projects';
 
 const Info = () => {
   const { id } = useParams(); // Obtém o ID da URL
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  }
 
   const openLink = (url) => {
     window.open(url, '_blank');
@@ -22,6 +28,10 @@ const Info = () => {
 
   return (
     <div className={styles.container}>
+       <button onClick={handleBackClick} className="back-button">
+       <FaArrowLeft className="back-icon" /> 
+       Voltar</button>       
+                
       <h1>{project.title}</h1>
       <p className={styles.infoP}>{project.description}</p>
 
