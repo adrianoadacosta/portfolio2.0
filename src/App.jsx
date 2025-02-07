@@ -33,18 +33,35 @@ function App() {
     }
   }, [location.pathname]); // Executa toda vez que a rota muda
 
+// Estado do modo escuro, carregando do localStorage
+const [isDarkMode, setIsDarkMode] = useState(() => {
+  return localStorage.getItem("theme") === "dark"; // Se "dark" estiver salvo, ativa o modo escuro
+});
+
+const toggleDarkMode = () => {
+  setIsDarkMode((prevMode) => {
+    const newMode = !prevMode;
+    localStorage.setItem("theme", newMode ? "dark" : "light"); // Salva a escolha no localStorage
+    return newMode;
+  });
+};
+
   return (
     <>
-    
-      <NavbarPrincipal />
-      {showProjectsNavbar && <NavbarProjects/>}
+      <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+        <button onClick={toggleDarkMode}>
+          {isDarkMode ? 'Modo Normal' : 'Modo Escuro'}
+        </button>
+         
+        <NavbarPrincipal />
+        {showProjectsNavbar && <NavbarProjects/>}
         <div className="container">
           <Routes>
               <Route path='/' element={<About/>} />
               <Route path='/projects'/>
-              <Route path='/projects/front' element={<FrontEnd/>} />
-              <Route path='/projects/back' element={<BackEnd/>} />
-              <Route path='/projects/full' element={<FullStack/>} />
+              <Route path='/projects/front' element={<FrontEnd isDarkMode={isDarkMode}/>} />
+              <Route path='/projects/back' element={<BackEnd isDarkMode={isDarkMode}/>} />
+              <Route path='/projects/full' element={<FullStack isDarkMode={isDarkMode}/>} />
               <Route path="/projects/:id/info" element={<Info />} />
               <Route path='/contact' element={<Contact/>} />
               <Route path="/search" element={<Search />} />
@@ -52,7 +69,9 @@ function App() {
           </Routes>
         </div>        
         <Footer/>
-        <ScrollToTop />     
+        <ScrollToTop />
+
+      </div>         
     </>
   )
 }

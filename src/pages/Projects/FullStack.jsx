@@ -1,12 +1,15 @@
+import PropTypes from "prop-types";
 import styles from '../Projects/Projects.module.css'
 
 import { Link } from 'react-router-dom';
 import projects from '../../data/projects'
 
-const FullStack = () => {
+const FullStack = ({ isDarkMode }) => {
    return (
     <div className={styles.container}>
-      <h1 className={styles.titles}>Projetos Fullstack</h1>
+      <h1 className={`${styles.titles} ${isDarkMode ? styles.darkTitle : ""}`}>
+        Projetos Fullstack
+      </h1>
       <div className={styles.cardContainer}>
         {projects.fullStack.map((project) => (
           <div key={project.id}  className={styles.card}>
@@ -18,5 +21,8 @@ const FullStack = () => {
       </div>
     </div>
   );
+};
+FullStack.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired, 
 };
 export default FullStack

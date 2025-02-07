@@ -8,6 +8,9 @@
 .titles {
 	color: #000;
 }
+.darkTitle {
+	color: #fff; 
+  }
 .titles_p {
 	font-size: 20px;
 	text-align: center;

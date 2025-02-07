@@ -1,12 +1,15 @@
+import PropTypes from "prop-types";
 import styles from '../Projects/Projects.module.css'
 
 import { Link } from 'react-router-dom';
 import projects from '../../data/projects'
 
-const FrontEnd = () => {
+const FrontEnd = ({ isDarkMode }) => {
    return (
     <div className={styles.container}>
-      <h1 className={styles.titles}>Projetos Front-End</h1>
+      <h1 className={`${styles.titles} ${isDarkMode ? styles.darkTitle : ""}`}>
+        Projetos Front-End
+      </h1>
       <div className={styles.cardContainer}>
         {projects.frontEnd.map((project) => (
           <div key={project.id}  className={styles.card}>
@@ -18,5 +21,8 @@ const FrontEnd = () => {
       </div>
     </div>
   );
+};
+FrontEnd.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired, 
 };
 export default FrontEnd

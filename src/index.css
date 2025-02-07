@@ -66,6 +66,27 @@ nav button:hover {
 	font-size: 50px;
 }
 
+/* modo escuro */
+.dark-mode {
+	background-color: #121212;
+	color: #ffffff;
+}
+.dark-mode .titles{
+	color: #fff;
+}
+/* Estilo do botão */
+button {
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #007bff;
+	color: #ffffff;
+}
+button:hover {
+	background-color: #0056b3;
+}
+
 /* responsivo */
 @media only screen and (max-width: 768px) {
 	.back-button {
